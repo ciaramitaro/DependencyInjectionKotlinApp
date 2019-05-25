@@ -1,5 +1,5 @@
 package samantha.ciaramitaro.dependencyinjectionkotlinapp.data.db
 
-class DatabseFakeImpl : Database {
+class DatabaseFakeImpl : Database {
     override val quoteDao: QuoteDao = QuoteDaoFakeImpl()
 }

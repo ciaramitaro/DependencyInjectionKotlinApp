@@ -19,5 +19,5 @@ class QuoteDaoFakeImpl: QuoteDao{
         quotes.value = quoteList
     }
     //Casting quotes to be LiveData because we don't want it to be mutable outside DAO class
-    override fun getQuote()= quotes as LiveData<List<Quote>>
+    override fun getQuotes()= quotes as LiveData<List<Quote>>
 }
