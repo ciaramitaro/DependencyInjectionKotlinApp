@@ -19,10 +19,10 @@ class QuotesActivity : AppCompatActivity(), KodeinAware {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quotes)
-        initalizeUi()
+        initializeUi()
     }
 
-    private fun initalizeUi(){
+    private fun initializeUi(){
         // Use ViewModelProviders class to create / get already created QuotesViewModel
         // for this view (activity)
         val viewModel = ViewModelProviders.of(this, viewModelFactory)
